@@ -69,7 +69,7 @@ const CategoryTable = ({
               ) : (
                 <Avatar
                   src="https://res.cloudinary.com/ahossain/image/upload/v1655097002/placeholder_kvepfp.png"
-                  alt="product"
+                  alt="Category"
                   className="hidden p-1 mr-2 md:block bg-gray-50 shadow-none"
                 />
               )}

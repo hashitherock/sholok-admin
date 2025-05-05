@@ -69,17 +69,20 @@ const ProductTable = ({ products, isCheck, setIsCheck }) => {
                   />
                 ) : (
                   <Avatar
-                    src={`https://res.cloudinary.com/ahossain/image/upload/v1655097002/placeholder_kvepfp.png`}
+                    src={`https://res.cloudinary.com/sholok/image/upload/v1719212894/placeholder_mugpwt.png`}
                     alt="product"
                   />
                 )}
                 <div>
                   <h2
                     className={`text-sm font-medium ${
-                      product?.title.length > 30 ? "wrap-long-title" : ""
-                    }`}
+                      showingTranslateValue(product?.title).length > 30 ? "wrap-long-title" : ""
+                    }`} title={showingTranslateValue(product?.title)}
                   >
-                    {showingTranslateValue(product?.title)?.substring(0, 28)}
+                    {/* {showingTranslateValue(product?.title)?.substring(0, 28)} */}
+                    {showingTranslateValue(product?.title)?.length > 30 ?
+                      `${showingTranslateValue(product?.title)?.substring(0, 30)}...` : showingTranslateValue(product?.title)
+                    }
                   </h2>
                 </div>
               </div>

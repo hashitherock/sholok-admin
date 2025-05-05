@@ -1289,7 +1289,7 @@ input[type="number"]::-webkit-outer-spin-button {
 /* Add this to your CSS */
 .wrap-long-title {
   white-space: normal; /* Allow text to wrap */
-  max-width: 6rem; /* Adjust the maximum width as needed */
+  max-width: 8rem; /* Adjust the maximum width as needed  Add By Hashi 6rem chilo */
   line-height: 0.5; /* Adjust line height for better readability */
 }
 

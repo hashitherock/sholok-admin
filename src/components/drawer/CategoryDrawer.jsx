@@ -138,6 +138,21 @@ const CategoryDrawer = ({ id, data }) => {
       <Scrollbars className="w-full md:w-7/12 lg:w-8/12 xl:w-8/12 relative dark:bg-gray-700 dark:text-gray-200">
         <form onSubmit={handleSubmit(onSubmit)}>
           <div className="p-6 flex-grow scrollbar-hide w-full max-h-full pb-40">
+            {/* <div className="grid grid-cols-6 gap-3 md:gap-5 xl:gap-6 lg:gap-6 mb-6">
+              <LabelArea label={t("Category Id")} />
+              <div className="col-span-8 sm:col-span-4">
+                <InputArea
+                  required={true}
+                  register={register}
+                  label="Category Id"
+                  name="category_id"
+                  type="text"
+                  placeholder="Category Id"
+                />
+                <Error errorName={errors.category_id} />
+              </div>
+            </div> */}
+
             <div className="grid grid-cols-6 gap-3 md:gap-5 xl:gap-6 lg:gap-6 mb-6">
               <LabelArea label={t("Name")} />
               <div className="col-span-8 sm:col-span-4">

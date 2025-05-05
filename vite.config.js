@@ -14,7 +14,7 @@ export default defineConfig({
   // base: "/", // Set the base URL path for your application
 
   build: {
-    // outDir: "build", // comment this if you select vite as project when deploy
+    outDir: "build", // comment this if you select vite as project when deploy
     assetsDir: "@/assets", // Set the directory for the static assets
     // sourcemap: process.env.__DEV__ === "true",
     rollupOptions: {
@@ -58,8 +58,8 @@ export default defineConfig({
         scope: ".",
         start_url: ".",
         id: ".",
-        short_name: "Kachabazar - E-Commerce Website",
-        name: "Kachabazar | React eCommerce Admin Dashboard",
+        short_name: "Kachabazar Hashi - E-Commerce Website",
+        name: "Kachabazar Hasina | React eCommerce Admin Dashboard",
         description:
           "Kachabazar : React Grocery & Organic Food Store e-commerce Admin Dashboard",
         icons: [
